@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Описание активностей:"
+            android:gravity="center"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:shrinkColumns="1"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="0"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Уровень активности"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_column="1"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Описание"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </TableRow>
+            <TableRow
+                android:padding="5dp">
+                <TextView
+                    android:textSize="15sp"
+                    android:text="Сидячий образ"
+                    android:layout_column="0"
+                    android:layout_gravity="center|start"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:maxLines="3"
+                    android:textSize="15sp"
+                    android:text="Нет работы или работа за столом"
+                    android:layout_column="1"
+                    android:gravity="center"
+                    android:padding="5dp" />
+            </TableRow>
+            <TableRow
+                android:padding="5dp">
+                <TextView
+                    android:maxLines="3"
+                    android:textSize="15sp"
+                    android:text="Меленькая \nактивность"
+                    android:layout_column="0"
+                    android:layout_gravity="center|start"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:maxLines="5"
+                    android:textSize="15sp"
+                    android:text="Мало физических работы или занятия спортом 1-3 раза в неделю"
+                    android:layout_column="1"
+                    android:gravity="center"
+                    android:padding="5dp" />
+            </TableRow>
+            <TableRow
+                android:padding="5dp">
+                <TextView
+                    android:maxLines="3"
+                    android:textSize="15sp"
+                    android:text="Средняя \nактивность"
+                    android:layout_column="0"
+                    android:layout_gravity="center|start"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:maxLines="6"
+                    android:textSize="15sp"
+                    android:text="Умеренная физическая работа или занятия спортом 3 - 5 дней в неделю"
+                    android:layout_column="1"
+                    android:gravity="center"
+                    android:padding="5dp" />
+            </TableRow>
+            <TableRow
+                android:padding="5dp">
+                <TextView
+                    android:maxLines="3"
+                    android:textSize="15sp"
+                    android:text="Сильная \nактивность"
+                    android:layout_column="0"
+                    android:layout_gravity="center|start"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:maxLines="7"
+                    android:textSize="15sp"
+                    android:text="Сильные физическая нагрузка или занятия спортом 6 - 7 дней в неделю"
+                    android:layout_column="1"
+                    android:gravity="center"
+                    android:padding="5dp" />
+            </TableRow>
+            <TableRow
+                android:padding="5dp">
+                <TextView
+                    android:maxLines="3"
+                    android:textSize="15sp"
+                    android:text="Маскимальная \nактивность"
+                    android:layout_column="0"
+                    android:layout_gravity="center|start"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:maxLines="7"
+                    android:textSize="15sp"
+                    android:text="Сильная ежедневная физическая нагрузка или спорт и физическая работа"
+                    android:layout_column="1"
+                    android:gravity="center"
+                    android:padding="5dp" />
+            </TableRow>
+        </TableLayout>
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Назад"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
